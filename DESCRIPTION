@@ -5,10 +5,10 @@ Version: 0.1.0
 Author: enzo03gomes
 Maintainer: enzo03gomes <enzo03gomes@gmail.com>
 Description: FTIR analysis tools for R, including:
-    > Baseline Correction
-    > Normalization
-    > Smoothing
-    > Deconvolution
+    > Baseline Correction    
+    > Normalization    
+    > Smoothing    
+    > Deconvolution    
     > Peak Detection and Labeling
 License: GPL-3
 Encoding: UTF-8
