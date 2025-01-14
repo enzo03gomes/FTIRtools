@@ -7,7 +7,7 @@
 is.spr(object)
 }
 \arguments{
-\item{spr}{object to test}
+\item{object}{object to test}
 }
 \description{
 Check if object is spr

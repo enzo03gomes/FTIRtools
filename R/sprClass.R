@@ -1,3 +1,11 @@
+#'@importFrom methods new
+NULL
+
+
+#'spectra class
+#'
+#'@export
+
 setClass("spectra", representation = list(spectralAxis = "numeric",
                                           response = "numeric",
                                           axis = "character",
@@ -6,6 +14,11 @@ setClass("spectra", representation = list(spectralAxis = "numeric",
                                           history = "character"))
 
 
+
+#'Present important spr information when printing
+#'
+#'@param object spr object
+#'
 
 setMethod("show", "spectra", function(object){
   cat("Spectra:             ", object@sample, "\n")
@@ -37,6 +50,8 @@ setMethod("show", "spectra", function(object){
 #'@param units character vector containing axis units (WIP)
 #'@param sample name of sample
 #'@param history character vector containing changes to spectra. When creating a new spr object it is recommended to keep it empty (default behaviour)
+#'
+#' @importFrom methods new
 #'
 #'@export
 
@@ -80,7 +95,7 @@ as.spr = function(data, axis, units, sample, history = ""){
 
 #'Check if object is spr
 #'
-#'@param spr object to test
+#'@param object object to test
 #'
 #'@export
 

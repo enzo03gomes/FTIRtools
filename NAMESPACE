@@ -1,1 +1,4 @@
 exportPattern("^[[:alpha:]]+")
+importFrom(methods, new)
+import(torch)
+import(stats)

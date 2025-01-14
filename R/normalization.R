@@ -1,10 +1,19 @@
+#' @import torch
+NULL
+#' @importFrom stats sd
+NULL
+
+
 #' Normalize FTIR spectra
+#'
 #' @param spr object of class spectra
 #' @param type normalization type. Options are "L-norm", "area", "max" and "SNV"
 #' @param order Order of L-norm. Used only if type == "L-norm"
 #' @param target If type == "max", target is the new maximum value; if type == "SNV", target is the new total area
 #'
-#'@export
+#' @export
+
+
 
 spr.norm = function(spr, type = "L-norm", order = 2, target = 1){
   if(!is.spr(spr)) stop("spr must be of class spectra")
