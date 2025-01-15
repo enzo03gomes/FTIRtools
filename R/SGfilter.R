@@ -10,8 +10,8 @@ NULL
 #' @export
 
 SG.parameters = function(N,M){
-  stopifnot("N must be an integer" = is.whole(N))
-  stopifnot("M must be an integer" = is.whole(M))
+  stopifnot("N must be an integer" = round(N) == N)
+  stopifnot("M must be an integer" = round(M) == M)
 
   if(N>=2*M){
     stop("For smoothing to be effective, N<2M")
